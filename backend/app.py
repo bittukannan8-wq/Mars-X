@@ -1,7 +1,15 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
-app = Flask(_name_)
+# Import Member 4 Route Planning API
+from modules.route_api import route_api
 
+app = Flask(__name__)
+
+# Register Route Planning API
+app.register_blueprint(route_api)
+
+
+# Main project endpoint
 @app.route("/")
 def home():
     return jsonify({
@@ -10,6 +18,8 @@ def home():
         "status": "Running"
     })
 
+
+# Backend status endpoint
 @app.route("/api/status")
 def status():
     return jsonify({
@@ -17,5 +27,12 @@ def status():
         "project": "MARS-X"
     })
 
-if _name_ == "_main_":
-    app.run(debug=True)
+
+# Member 4 - Route Planner Page
+@app.route("/route-planner")
+def route_planner_page():
+    return render_template("route_planner.html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)

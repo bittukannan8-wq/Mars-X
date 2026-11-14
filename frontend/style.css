@@ -1,0 +1,298 @@
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090b10;
+    color: white;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: #10131b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #ff633d;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff633d;
+}
+
+.nav-button,
+.primary-button {
+    text-decoration: none;
+    background: #f45132;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+    background: #ff795b;
+}
+
+
+/* HERO SECTION */
+.hero {
+    min-height: 620px;
+    padding: 130px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 7, 12, 0.95),
+            rgba(5, 7, 12, 0.65),
+            rgba(5, 7, 12, 0.25)
+        ),
+        url("../images/mars-background.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #ff704d;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #ff633d;
+}
+
+.description {
+    color: #c4c4c4;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+.mission-label {
+    margin-top: 70px;
+    border-left: 3px solid #ff633d;
+    padding-left: 15px;
+}
+
+.mission-label p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+
+/* EXPLORATION SECTION */
+
+.explorer,
+.module-section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    color: #ff633d;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+}
+
+
+/* FEATURE CARDS */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    background: #151923;
+    padding: 30px;
+    min-height: 250px;
+    border: 1px solid #292d37;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff633d;
+}
+
+.feature-card span {
+    color: #ff633d;
+    font-size: 12px;
+}
+
+.feature-card h3 {
+    margin: 25px 0 15px;
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: #aaa;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.feature-card a {
+    color: #ff795b;
+    text-decoration: none;
+}
+
+
+/* MODULE PLACEHOLDERS */
+
+.module-section {
+    background: #0d1018;
+}
+
+.module-placeholder {
+    min-height: 280px;
+    background: #151923;
+    border: 1px dashed #ff633d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.module-placeholder h3 {
+    color: #ff795b;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.module-placeholder p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 45px 20px;
+    background: #07090e;
+}
+
+footer h2 {
+    color: #ff633d;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #999;
+    margin: 10px;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 90px 7%;
+    }
+
+    .explorer,
+    .module-section {
+        padding: 60px 7%;
+    }
+
+}
+nav a.active {
+    color: #ff633d;
+}

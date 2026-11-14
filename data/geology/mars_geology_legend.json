@@ -1,0 +1,270 @@
+{
+  "title": "Mars Geological Units Legend",
+  "source": "USGS Scientific Investigations Map 3292 (2014)",
+  "units": [
+    {
+      "unit_id": "AHi",
+      "label": "Amazonian and Hesperian impact unit",
+      "color": "#E05555",
+      "region_count": 342
+    },
+    {
+      "unit_id": "AHtu",
+      "label": "Amazonian and Hesperian transition undivided unit",
+      "color": "#557EE0",
+      "region_count": 12
+    },
+    {
+      "unit_id": "AHv",
+      "label": "Amazonian and Hesperian volcanic",
+      "color": "#A6E055",
+      "region_count": 12
+    },
+    {
+      "unit_id": "ANa",
+      "label": "Amazonian and Noachian apron unit",
+      "color": "#E055CF",
+      "region_count": 17
+    },
+    {
+      "unit_id": "Aa",
+      "label": "Amazonian apron unit",
+      "color": "#55E0C9",
+      "region_count": 13
+    },
+    {
+      "unit_id": "Ap",
+      "label": "Amazonian polar unit",
+      "color": "#E0A155",
+      "region_count": 1
+    },
+    {
+      "unit_id": "Apu",
+      "label": "Amazonian polar undivided unit",
+      "color": "#7855E0",
+      "region_count": 5
+    },
+    {
+      "unit_id": "Av",
+      "label": "Amazonian volcanic unit",
+      "color": "#5BE055",
+      "region_count": 8
+    },
+    {
+      "unit_id": "Ave",
+      "label": "Amazonian volcanic edifice",
+      "color": "#E05584",
+      "region_count": 6
+    },
+    {
+      "unit_id": "HNb",
+      "label": "Hesperian and Noachian basin unit",
+      "color": "#55ACE0",
+      "region_count": 2
+    },
+    {
+      "unit_id": "HNhu",
+      "label": "Hesperian and Noachian highland undivided unit",
+      "color": "#D5E055",
+      "region_count": 11
+    },
+    {
+      "unit_id": "HNt",
+      "label": "Hesperian and Noachian transition unit",
+      "color": "#C355E0",
+      "region_count": 46
+    },
+    {
+      "unit_id": "Hp",
+      "label": "Hesperian polar unit",
+      "color": "#55E09B",
+      "region_count": 9
+    },
+    {
+      "unit_id": "Hpe",
+      "label": "Hesperian polar edifice unit",
+      "color": "#E07255",
+      "region_count": 8
+    },
+    {
+      "unit_id": "Hpu",
+      "label": "Hesperian polar undivided unit",
+      "color": "#5561E0",
+      "region_count": 1
+    },
+    {
+      "unit_id": "Ht",
+      "label": "Hesperian transition unit",
+      "color": "#8AE055",
+      "region_count": 16
+    },
+    {
+      "unit_id": "Hto",
+      "label": "Hesperian transition outflow unit",
+      "color": "#E055B2",
+      "region_count": 8
+    },
+    {
+      "unit_id": "Htu",
+      "label": "Hesperian transition undivided unit",
+      "color": "#55DBE0",
+      "region_count": 16
+    },
+    {
+      "unit_id": "Hve",
+      "label": "Hesperian volcanic edifice unit",
+      "color": "#E0BD55",
+      "region_count": 10
+    },
+    {
+      "unit_id": "Nhe",
+      "label": "Noachian highland edifice unit",
+      "color": "#9555E0",
+      "region_count": 23
+    },
+    {
+      "unit_id": "Nhu",
+      "label": "Noachian highland undivided unit",
+      "color": "#55E06C",
+      "region_count": 16
+    },
+    {
+      "unit_id": "Nve",
+      "label": "Noachian volcanic edifice unit",
+      "color": "#E05567",
+      "region_count": 8
+    },
+    {
+      "unit_id": "eAb",
+      "label": "Early Amazonian basin unit",
+      "color": "#5590E0",
+      "region_count": 2
+    },
+    {
+      "unit_id": "eHb",
+      "label": "Early Hesperian basin unit",
+      "color": "#B8E055",
+      "region_count": 2
+    },
+    {
+      "unit_id": "eHh",
+      "label": "Early Hesperian highland unit",
+      "color": "#E055E0",
+      "region_count": 21
+    },
+    {
+      "unit_id": "eHt",
+      "label": "Early Hesperian transition unit",
+      "color": "#55E0B7",
+      "region_count": 20
+    },
+    {
+      "unit_id": "eHv",
+      "label": "Early Hesperian volcanic unit",
+      "color": "#E08F55",
+      "region_count": 23
+    },
+    {
+      "unit_id": "eNh",
+      "label": "Early Noachian highland unit",
+      "color": "#6655E0",
+      "region_count": 112
+    },
+    {
+      "unit_id": "eNhm",
+      "label": "Early Noachian highland massif unit",
+      "color": "#6DE055",
+      "region_count": 10
+    },
+    {
+      "unit_id": "lAa",
+      "label": "Late Amazonian apron unit",
+      "color": "#E05596",
+      "region_count": 4
+    },
+    {
+      "unit_id": "lApc",
+      "label": "Late Amazonian polar cap unit",
+      "color": "#55BEE0",
+      "region_count": 2
+    },
+    {
+      "unit_id": "lApd",
+      "label": "Late Amazonian polar dunes unit",
+      "color": "#E0DA55",
+      "region_count": 5
+    },
+    {
+      "unit_id": "lAv",
+      "label": "Late Amazonian volcanic unit",
+      "color": "#B155E0",
+      "region_count": 11
+    },
+    {
+      "unit_id": "lAvf",
+      "label": "Late Amazonian volcanic field unit",
+      "color": "#55E089",
+      "region_count": 9
+    },
+    {
+      "unit_id": "lHb",
+      "label": "Late Hesperian basin unit",
+      "color": "#E06055",
+      "region_count": 1
+    },
+    {
+      "unit_id": "lHl",
+      "label": "Late Hesperian lowland unit",
+      "color": "#5573E0",
+      "region_count": 10
+    },
+    {
+      "unit_id": "lHt",
+      "label": "Late Hesperian transition unit",
+      "color": "#9BE055",
+      "region_count": 28
+    },
+    {
+      "unit_id": "lHv",
+      "label": "Late Hesperian volcanic unit",
+      "color": "#E055C4",
+      "region_count": 13
+    },
+    {
+      "unit_id": "lHvf",
+      "label": "Late Hesperian volcanic field unit",
+      "color": "#55E0D4",
+      "region_count": 7
+    },
+    {
+      "unit_id": "lNh",
+      "label": "Late Noachian highland unit",
+      "color": "#E0AC55",
+      "region_count": 292
+    },
+    {
+      "unit_id": "lNv",
+      "label": "Late Noachian volcanic unit",
+      "color": "#8355E0",
+      "region_count": 9
+    },
+    {
+      "unit_id": "mAl",
+      "label": "Middle Amazonian lowland unit",
+      "color": "#55E05A",
+      "region_count": 26
+    },
+    {
+      "unit_id": "mNh",
+      "label": "Middle Noachian highland unit",
+      "color": "#E05579",
+      "region_count": 99
+    },
+    {
+      "unit_id": "mNhm",
+      "label": "Middle Noachian highland massif unit",
+      "color": "#55A1E0",
+      "region_count": 15
+    }
+  ]
+}

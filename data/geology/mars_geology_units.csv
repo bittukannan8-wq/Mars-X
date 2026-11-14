@@ -1,0 +1,45 @@
+Unit,Description,Region_Count,Total_Area_km2
+AHi,Amazonian and Hesperian impact unit,342,7913061.42
+AHtu,Amazonian and Hesperian transition undivided unit,12,2200401.77
+AHv,Amazonian and Hesperian volcanic,12,13213955.36
+ANa,Amazonian and Noachian apron unit,17,373841.76
+Aa,Amazonian apron unit,13,998728.55
+Ap,Amazonian polar unit,1,221101.0
+Apu,Amazonian polar undivided unit,5,2005394.2
+Av,Amazonian volcanic unit,8,2102494.34
+Ave,Amazonian volcanic edifice,6,824779.15
+HNb,Hesperian and Noachian basin unit,2,596206.0
+HNhu,Hesperian and Noachian highland undivided unit,11,1006732.23
+HNt,Hesperian and Noachian transition unit,46,2889482.43
+Hp,Hesperian polar unit,9,1221563.19
+Hpe,Hesperian polar edifice unit,8,259771.43
+Hpu,Hesperian polar undivided unit,1,34509.9
+Ht,Hesperian transition unit,16,910149.26
+Hto,Hesperian transition outflow unit,8,1289054.46
+Htu,Hesperian transition undivided unit,16,741193.75
+Hve,Hesperian volcanic edifice unit,10,382779.66
+Nhe,Noachian highland edifice unit,23,220604.28
+Nhu,Noachian highland undivided unit,16,1610477.1800000002
+Nve,Noachian volcanic edifice unit,8,206573.68
+eAb,Early Amazonian basin unit,2,545426.7
+eHb,Early Hesperian basin unit,2,395407.1
+eHh,Early Hesperian highland unit,21,1805659.34
+eHt,Early Hesperian transition unit,20,3688017.2800000003
+eHv,Early Hesperian volcanic unit,23,5791996.8
+eNh,Early Noachian highland unit,112,14599336.351
+eNhm,Early Noachian highland massif unit,10,1944451.73
+lAa,Late Amazonian apron unit,4,285947.5
+lApc,Late Amazonian polar cap unit,2,700535.0
+lApd,Late Amazonian polar dunes unit,5,301048.39
+lAv,Late Amazonian volcanic unit,11,3409561.02
+lAvf,Late Amazonian volcanic field unit,9,312533.65
+lHb,Late Hesperian basin unit,1,912198.0
+lHl,Late Hesperian lowland unit,10,16020810.44
+lHt,Late Hesperian transition unit,28,2345022.43
+lHv,Late Hesperian volcanic unit,13,2391021.71
+lHvf,Late Hesperian volcanic field unit,7,440896.9
+lNh,Late Noachian highland unit,292,8419068.61
+lNv,Late Noachian volcanic unit,9,2226351.62
+mAl,Middle Amazonian lowland unit,26,2996875.67
+mNh,Middle Noachian highland unit,99,32313475.240000002
+mNhm,Middle Noachian highland massif unit,15,1873163.46

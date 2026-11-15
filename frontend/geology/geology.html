@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS-X | Geological Explorer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="geology.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">🔴 MARS-X</div>
+        <span>PLANETARY GEOLOGY EXPLORER</span>
+        <a href="../index.html">← Main Dashboard</a>
+    </header>
+
+    <main class="dashboard">
+        <section class="heading">
+            <div>
+                <p class="eyebrow">NASA • USGS • MARS DATA</p>
+                <h1>Geological Explorer</h1>
+                <p>Discover the geological history and surface units of Mars.</p>
+            </div>
+            <div class="feature-count">
+                <strong id="feature-count">1,311</strong>
+                <span>Mapped features</span>
+            </div>
+        </section>
+
+        <section class="workspace">
+            <aside class="sidebar">
+                <h2>Explore Units</h2>
+                <input id="unit-search" type="search"
+                       placeholder="Search geological units...">
+
+                <h3>Map Legend</h3>
+                <div id="legend">
+                    <p>Loading geological units...</p>
+                </div>
+
+                <div class="unit-info">
+                    <h3>Region Information</h3>
+                    <div id="unit-details">
+                        Select a region on the map to explore its details.
+                    </div>
+                </div>
+            </aside>
+
+            <section class="map-section">
+                <div class="map-toolbar">
+                    <span>GLOBAL GEOLOGICAL MAP</span>
+                    <span id="status">Loading map...</span>
+                </div>
+                <div id="map"></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="geology.js"></script>
+</body>
+</html>

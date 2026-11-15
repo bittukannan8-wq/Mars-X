@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MARS-X | Mars Explorer</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🔴 MARS-X</h1>
+        <p>Interactive Martian Exploration Map</p>
+    </header>
+
+
+    <main>
+
+        <!-- ================================= -->
+        <!-- 1. LOCATION TOOLBAR -->
+        <!-- ================================= -->
+
+        <section class="toolbar">
+
+            <label for="locationSelect">
+                📍 Explore a Mars Location:
+            </label>
+
+            <select id="locationSelect">
+
+                <option value="">
+                    Select a location
+                </option>
+
+                <option value="AP-1">
+                    Amazonis Planitia - AP-1
+                </option>
+
+                <option value="AP-8">
+                    Amazonis Planitia - AP-8
+                </option>
+
+                <option value="AP-9">
+                    Amazonis Planitia - AP-9
+                </option>
+
+                <option value="Elysium Planitia">
+                    Elysium Planitia
+                </option>
+
+                <option value="Jezero Crater">
+                    Jezero Crater
+                </option>
+
+                <option value="Gale Crater">
+                    Gale Crater
+                </option>
+
+            </select>
+
+            <button id="resetMap" type="button">
+                Reset Map
+            </button>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- 2. MARS LANDMARK SEARCH -->
+        <!-- ================================= -->
+
+        <section class="search-section">
+
+            <h2>🔎 Search Mars Landmarks</h2>
+
+            <p>
+                Discover important geographical features
+                across the Martian surface.
+            </p>
+
+            <div class="search-container">
+
+                <input
+                    type="search"
+                    id="landmarkSearch"
+                    placeholder="Search Olympus Mons, Valles Marineris..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    id="searchButton">
+                    Search
+                </button>
+
+                <button
+                    type="button"
+                    id="clearSearch">
+                    Clear
+                </button>
+
+            </div>
+
+            <!-- SEARCH RESULTS -->
+
+            <div
+                id="landmarkResults"
+                class="search-results"
+                aria-live="polite">
+
+                <p>
+                    Search for a Martian landmark to explore.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- 3. MAP LAYER SELECTOR -->
+        <!-- ================================= -->
+
+        <section class="map-controls">
+
+            <label for="layerSelect">
+                🗺️ Select Mars Map Layer:
+            </label>
+
+            <select id="layerSelect">
+
+                <option value="elevation">
+                    Elevation Map
+                </option>
+
+                <option value="surface">
+                    Surface Imagery (Coming Soon)
+                </option>
+
+                <option value="infrared">
+                    Infrared Map (Coming Soon)
+                </option>
+
+            </select>
+
+        </section>
+        <!-- GEOLOGICAL MAP CONTROLS -->
+<section class="geology-controls">
+
+    <label>
+        <input type="checkbox" id="geologyToggle">
+        Show Martian Geological Map
+    </label>
+
+    <div id="geologyLegend" class="geology-legend">
+        <h3>Martian Geological Units</h3>
+        <p>Enable the geological layer to view the legend.</p>
+    </div>
+
+</section>
+
+        <!-- ================================= -->
+        <!-- 4. MARS MAP -->
+        <!-- ================================= -->
+
+        <section class="map-section">
+
+            <div id="marsMap"></div>
+            <section id="geologyInfoPanel" class="geology-info-panel">
+                <h2>Geological Region Information</h2>
+
+                <p class="panel-placeholder">
+                Select a geological region on the map to view its details.
+                </p>
+
+                <div id="geologyInfoContent"></div>
+            </section>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- 5. LOCATION INFORMATION -->
+        <!-- ================================= -->
+
+        <section class="info">
+
+            <h2>📍 Selected Mars Location</h2>
+
+            <p id="locationInfo">
+
+                Click on the Mars map or select a location above.
+
+            </p>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- 6. EXPLORATION LOCATIONS -->
+        <!-- ================================= -->
+
+        <section class="locations-section">
+
+            <h2>🌍 Mars Exploration Locations</h2>
+
+            <div class="location-list">
+
+                <div class="location-card">
+
+                    <h3>AP-1</h3>
+
+                    <p>Amazonis Planitia</p>
+
+                    <span>Potential landing candidate</span>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <h3>AP-8</h3>
+
+                    <p>Amazonis Planitia</p>
+
+                    <span>Alternative exploration candidate</span>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <h3>AP-9</h3>
+
+                    <p>Amazonis Planitia</p>
+
+                    <span>Potential ice investigation site</span>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <h3>Elysium Planitia</h3>
+
+                    <p>InSight landing region</p>
+
+                    <span>Relatively flat Martian plain</span>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <h3>Jezero Crater</h3>
+
+                    <p>Perseverance rover region</p>
+
+                    <span>Ancient lake and delta environment</span>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <h3>Gale Crater</h3>
+
+                    <p>Curiosity rover region</p>
+
+                    <span>Geological exploration region</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================= -->
+    <!-- 7. FOOTER -->
+    <!-- ================================= -->
+
+    <footer>
+
+        <p>
+            MARS-X | Interactive Martian Exploration System
+        </p>
+
+        <p>
+            Map imagery: NASA / JPL Mars Trek
+        </p>
+
+    </footer>
+
+
+    <!-- LEAFLET JAVASCRIPT -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+    <!-- CUSTOM JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
